@@ -1,0 +1,40 @@
+.carousel {
+    padding-top: 5%;
+    margin-left: 18%;
+    width: 70%;
+    height: 40%;
+    /* background-color: black; */
+}
+
+.carouselInner {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.carouselInner .left {
+    flex: 5%;
+    height: 100%;
+  
+    display: grid;
+ 
+    color: white;
+    cursor: pointer;
+}
+
+
+.carouselInner .right {
+    flex: 5%;
+    height: 100%; 
+    display: grid;
+ text-align: right;
+    color: white;
+    cursor: pointer;
+}
+.left_image, .right_image{
+font-size: 4rem;
+    color: white;
+}
