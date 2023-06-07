@@ -1,3 +1,4 @@
+// slider at home Page component
 import React, { useState } from "react";
 import "./Carousel.css";
 import { images } from "./CarouselData";
@@ -6,9 +7,9 @@ const l = "<";
 
 function Carousel() {
   const [currImg, setCurrImg] = useState(0);
+  // changing color on click
   const [colour1, setColour1] = useState("grey");
   const [colour2, setColour2] = useState("white");
-  const [count, setCount] = useState(0);
 
   return (
     <div className="carousel">
@@ -39,7 +40,6 @@ function Carousel() {
               setCurrImg(currImg + 1);
               setColour1("white");
               setColour2("grey");
-              setCount(1);
             }
           }}
         >

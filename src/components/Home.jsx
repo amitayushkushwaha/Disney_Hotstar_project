@@ -1,3 +1,4 @@
+// Home page after clicking on explore
 import React from "react";
 import Sidebar from "./Sidebar";
 import Recommend from "./Recommend";

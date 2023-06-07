@@ -1,6 +1,5 @@
+// side_bar componet to display at home page
 import React from "react";
-// import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-// import PersonIcon from "@mui/icons-material/Person";
 function Sidebar() {
   return (
     <div className="sidebar">

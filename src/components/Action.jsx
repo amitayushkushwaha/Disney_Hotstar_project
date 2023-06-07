@@ -1,3 +1,4 @@
+// Action Movies_Page
 import React, { useState, useEffect } from "react";
 import Movie_card from "./Movie_card";
 function Action() {

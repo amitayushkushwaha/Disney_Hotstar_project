@@ -1,3 +1,4 @@
+// recommend component for recommend for you section at home page
 import React, { useState, useEffect } from "react";
 import Movie_card from "./Movie_card";
 

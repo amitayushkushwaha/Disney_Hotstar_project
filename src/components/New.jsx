@@ -1,3 +1,4 @@
+//Popular movie component to show at home page
 import React, { useState, useEffect } from "react";
 import Movie_card from "./Movie_card";
 function New() {
