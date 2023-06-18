@@ -1,6 +1,6 @@
 // favourite movie section on home page
 import React from "react";
-import { useSelector } from "react-redux";F
+import { useSelector } from "react-redux";
 import Movie_card from "./Movie_card";
 import { Link } from "react-router-dom";
 const g="-)))"
