@@ -1,7 +1,7 @@
 // trending page for trending and latest section at home page
 import React, { useState, useEffect } from "react";
 import Movie_card from "./Movie_card";
-
+import { Link } from "react-router-dom";
 function Trending() {
   const [movies, setMovies] = useState([]);
 
@@ -27,13 +27,13 @@ function Trending() {
       {movies.map(
         (movie) =>
           movie.type === "trending" && (
-            <a href="static">
-              <Movie_card
-                cardImg={movie.cardImg}
-                key={movie.id}
-                title={movie.title}
-              />
-            </a>
+              <Link to="../static" state={movie} relative="path">
+                <Movie_card
+                  cardImg={movie.cardImg}
+                  key={movie.id}
+                  title={movie.title}
+                />
+              </Link>
           )
       )}
     </div>

@@ -104,7 +104,7 @@ body {
 .im_logo {
   width: 100%;
   color: aliceblue;
-  margin-bottom: 17vh;
+  margin-bottom: 27vh;
 }
 
 .menu {
@@ -146,15 +146,34 @@ body {
 }
 
 /* Movie_Card Css */
+.favourite_movie_card,
 .movie_card {
   margin-left: 12%;
 }
 
+.favourite_movie_card img,
 .movie_card img {
   height: 15rem;
   width: 20vw;
   border-radius: 5px;
   margin: 10px;
+}
+.movie_card img:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+.favourite_movie_card img:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+.favourite_movie_card {
+  display: flex;
+  overflow-x: auto;
+
+  height: 100%;
+}
+.favourite_movie_card::-webkit-scrollbar {
+  display: none;
 }
 
 /* Footer Css */
@@ -172,12 +191,16 @@ body {
 
 /* Static_Page After clicking on Tv button or at any Movie card */
 .static {
-  background: url("https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/4F39B7E16726ECF419DD7C49E011DD95099AA20A962B0B10AA1881A70661CE45/scale?width=1440&aspectRatio=1.78&format=jpeg")
-    no-repeat center center/cover;
   margin: 0;
   height: 100vh;
   width: 100vw;
   position: relative;
+}
+.s_img {
+  position: fixed;
+  margin: 0;
+  height: 100%;
+  width: 100vw;
 }
 
 .sb {
@@ -213,6 +236,7 @@ body {
   width: 7rem;
   text-align: center;
   padding-top: 0.7rem;
+  position: fixed;
   box-sizing: border-box;
   height: 2.5rem;
   border: 1px solid white;
@@ -222,4 +246,80 @@ body {
 /* asigning all a tag text design to none */
 a {
   text-decoration: none;
+}
+.genre {
+  color: rgb(34, 240, 175);
+  margin-top: 10rem;
+  margin-left: 2rem;
+  font-size: 24px;
+  background-color: rgba(95, 101, 98, 0.5);
+  padding: 1px 5px;
+  border-radius: 5px;
+  position: absolute;
+}
+.title_ {
+  font-size: 2rem;
+}
+
+.add {
+  height: 2.5rem;
+  width: 2.7rem;
+  display: block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 2px 2px 4px;
+  background-color: rgba(127, 240, 187, 0.5);
+  border-radius: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.text {
+  position: relative;
+  top: 20rem;
+  left: 19rem;
+  font-size: 1.2rem;
+  display: inline;
+  background: rgba(202, 234, 202, 0.5);
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 4px;
+  color: rgb(59, 37, 49);
+}
+/* new */
+
+.f_page {
+  position: absolute;
+  padding: 5px;
+  border-radius: 10px;
+  color: rgb(245, 67, 35);
+  background-color: rgba(190, 221, 221, 0.5);
+  right: 20%;
+  font-size: 1.5rem;
+  top: 10rem;
+  display: none;
+  cursor: pointer;
+}
+.f_home {
+  display: inline;
+
+  margin-left: 20px;
+
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(177, 233, 233);
+}
+.f_container {
+  margin-top: 1.5rem;
+}
+.show{
+height: 3.2rem;
+padding-left: 5px;
+padding-right: 5px;
+padding-bottom: 7px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  margin-right: 1rem;
+  border-radius: 2rem;
+
 }

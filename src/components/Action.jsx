@@ -1,6 +1,7 @@
-// Action Movies_Page
+// Action_movies section on home page
 import React, { useState, useEffect } from "react";
 import Movie_card from "./Movie_card";
+import { Link } from "react-router-dom";
 function Action() {
   const [movies, setMovies] = useState([]);
 
@@ -26,13 +27,13 @@ function Action() {
       {movies.map(
         (movie) =>
           movie.type === "original" && (
-            <a href="static">
+            <Link to="../static" state={movie} relative="path">
               <Movie_card
                 cardImg={movie.cardImg}
                 key={movie.id}
                 title={movie.title}
               />
-            </a>
+            </Link>
           )
       )}
     </div>

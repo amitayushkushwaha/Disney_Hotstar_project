@@ -1,6 +1,7 @@
 // recommend component for recommend for you section at home page
 import React, { useState, useEffect } from "react";
 import Movie_card from "./Movie_card";
+import { Link } from "react-router-dom";
 
 function Recommend() {
   const [movies, setMovies] = useState([]);
@@ -27,13 +28,14 @@ function Recommend() {
       {movies.map(
         (movie) =>
           movie.type === "recommend" && (
-            <a href="static">
+            <Link to="../static" state={movie} relative="path">
               <Movie_card
                 cardImg={movie.cardImg}
                 key={movie.id}
                 title={movie.title}
               />
-            </a>
+           
+            </Link>
           )
       )}
     </div>

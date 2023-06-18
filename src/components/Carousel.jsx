@@ -11,26 +11,36 @@ function Carousel() {
   const [colour1, setColour1] = useState("grey");
   const [colour2, setColour2] = useState("white");
 
+
   return (
     <div className="carousel">
       <div
         className="carouselInner"
-        style={{ backgroundImage: `url(${images[currImg].img})` }}
+        style={{ backgroundImage: `url(${images[currImg].backgroundImg})` }}
       >
         <div
           className="left"
           onClick={() => {
             if (currImg > 0) {
               setCurrImg(currImg - 1);
-
+             if(currImg==2){
+              setColour2("grey");
+              setColour1("white")
+             }else if(currImg==1){
+              setColour2("white")
               setColour1("grey");
-              setColour2("white");
+             }else{
+              setColour2("white")
+              setColour1("white");
+             }
+             console.log(currImg);
             }
           }}
         >
           <p className="left_image" style={{ color: colour1 }}>
-            {l}
+            {l} 
           </p>
+          <p className="genre">{images[currImg].genre}</p>
         </div>
 
         <div
@@ -38,8 +48,14 @@ function Carousel() {
           onClick={() => {
             if (currImg < images.length - 1) {
               setCurrImg(currImg + 1);
-              setColour1("white");
-              setColour2("grey");
+              if(currImg==2){
+                setColour2("grey");
+                setColour1("white")
+               }else{
+                setColour2("white")
+                setColour1("white");
+               }
+               console.log(currImg);
             }
           }}
         >

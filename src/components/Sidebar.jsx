@@ -16,16 +16,13 @@ function Sidebar() {
       <div className="menu">
         <img src="./images/search-icon.svg" alt="search" />
       </div>
-      <a href="static">
-        <div className="menu">
-          <img src="./images/series-icon.svg" alt="series" />
-        </div>
-      </a>
+
+      <div className="menu">
+        <img src="./images/series-icon.svg" alt="series" />
+      </div>
+
       <div className="menu">
         <img src="./images/movie-icon.svg" alt="movie" />
-      </div>
-      <div className="menu">
-        <img src="./images/watchlist-icon.svg" alt="watch" />
       </div>
     </div>
   );
