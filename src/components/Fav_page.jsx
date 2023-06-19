@@ -27,7 +27,7 @@ function Fav_page() {
           className="f_movie_container"
         >
           <img src={movie.cardImg} alt={movie.title} 
-          style={{borderRadius: "10px"}}
+          style={{borderRadius: "10px",width:"24rem"}}
 
           />
           <p className="f_page" style={{display: "inline"}}
